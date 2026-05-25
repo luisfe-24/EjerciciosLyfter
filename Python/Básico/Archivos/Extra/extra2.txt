@@ -1,0 +1,4 @@
+Hola esto es un texto de prueba
+para contar palabras usando Python.
+Tiene espacios y saltos de línea
+para practicar hoy.

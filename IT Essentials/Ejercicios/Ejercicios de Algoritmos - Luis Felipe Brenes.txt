@@ -1,0 +1,48 @@
+a. Ver video YouTube
+
+1. Inicio
+2. Si tiene computadora:
+	1. Entrar a youtube.com
+3. Sino, si tiene smartphone, o si tiene tablet, o si tiene smart TV:
+	1. Entrar a la app de YouTube
+4. Sino:
+	1. Busque a alguien que si tenga alguno de los anteriores y pídaselo prestado.
+5. Buscar videos
+6. Reproducir video seleccionado
+7. Fin
+
+b. Rutina diaria
+
+1. Despertar
+2. Tender la cama
+3. Si tiene hambre:
+	1. Desayunar
+4. Sino:
+	1. Lavarse los dientes
+5. Cambiarse con ropa deportiva
+6. Ir al gym
+7. Hacer ejercicio
+8. Mientras la rutina este incompleta:
+	1. Seguir ejercitándose
+9. Fin de entreno
+10. Ir a casa
+11. Ir al baño
+12. Ducharse
+13. Ir a la cocina
+14. Preparar almuerzo
+15. Comer
+16. Ir al cuarto
+17. Si esta cansado:
+	1. Tomar una siesta
+18. Sino:
+	1. Prendo la computadora
+	2. Estudio y aprendo en Lyfter
+19. Poner correa al perro
+20. Pasear al perro
+21. Regresar a casa
+22. Ir a cocina
+23. Preparar cena
+24. Cenar
+25. Lavar los dientes y ponerse pijama
+26. Dormir
+

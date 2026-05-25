@@ -1,0 +1,74 @@
+a. Preparar fiesta sorpresa
+
+1. Inicio
+2. Hablar con amigos
+3. Planear la fiesta
+4. Si el amigo esta en casa:
+	1. Decirle a la novia que lleve a comer un helado
+5. Sino: 
+	1. Entrar en casa de amigo
+	2. Decorar la casa
+6. Si todos los invitados llegaron y la decoración esta lista:
+	1. Esconderse para dar la sorpresa
+7. Sino han llegado todos:
+	1. Esperar a los que faltan
+8. Sino esta lista la decoración:
+	9.Temrminar de decorar
+9. Amigo llega a casa
+10. Gritar Sorpresa
+11. Cantar cumpleaños
+12. Comer queque
+13. Jugar con amigos
+14. Despedir a todos
+15. Fin
+
+b. Preparar examen
+
+1. Inicio
+2. Preparar material para estudiar y sentarse en el escritorio
+4. Tomar el libro de estudio
+5. Mientras hayan temas por estudiar o no se sienta listo para el examen:	
+	1. Leer
+	2. Repasar
+	3. Practicar
+	4. Si entendió el tema:
+		1. Cambiar al siguiente tema
+		
+	5. Sino:
+		2. Seguir estudiando
+6. Cerrar libros y descansar
+7. Fin
+
+c. Preparar viaje
+
+1. Inicio
+2. Agarrar mi bulto
+3. Meter en el bulto objetos personales
+4. Si olvido mi camara:
+	1. Buscarla y meterla en el bulto
+5. Sino:
+	1. Seguir adelante. 
+6. Ponerse ropa para caminar
+7. Subirse al carro
+8. Dirigirse al bosque
+9. Comenzar expedición
+10. Fin
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
