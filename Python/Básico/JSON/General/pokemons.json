@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Pikachu",
+        "type": "Electric",
+        "level": 54,
+        "weight_kg": 6.0,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Thunder Shock",
+            "Quick Attack",
+            "Thunderbolt",
+            "Volt Tackle"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 40,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 90
+        }
+    },
+    {
+        "name": "Charmander",
+        "type": "Fire",
+        "level": 8,
+        "weight_kg": 8.5,
+        "is_shiny": true,
+        "held_item": "Charcoal",
+        "skills": [
+            "Ember",
+            "Scratch",
+            "Tackle",
+            "Smokescreen"
+        ],
+        "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "sp_attack": 60,
+            "sp_defense": 50,
+            "speed": 65
+        }
+    },
+    {
+        "name": "Bulbasaur",
+        "type": "Grass",
+        "level": 20,
+        "weight_kg": 6.9,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Tackle",
+            "Growl",
+            "Vine Whip",
+            "Razor Leaf"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 49,
+            "defense": 49,
+            "sp_attack": 65,
+            "sp_defense": 65,
+            "speed": 45
+        }
+    },
+    {
+        "name": "Squirtle",
+        "type": "Water",
+        "level": 12,
+        "weight_kg": 9.0,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Tackle",
+            "Tail Whip",
+            "Water Gun",
+            "Withdraw"
+        ],
+        "stats": {
+            "hp": 44,
+            "attack": 48,
+            "defense": 65,
+            "sp_attack": 50,
+            "sp_defense": 64,
+            "speed": 43
+        }
+    },
+    {
+        "name": "Growlithe",
+        "type": "Fire",
+        "level": 32,
+        "weight_kg": 19.0,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Bite",
+            "Roar",
+            "Flame Wheel",
+            "Agility"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 70,
+            "defense": 45,
+            "sp_attack": 70,
+            "sp_defense": 50,
+            "speed": 60
+        }
+    },
+    {
+        "name": "Gyarados",
+        "type": "Water",
+        "level": 45,
+        "weight_kg": 235.0,
+        "is_shiny": true,
+        "held_item": "Mystic Water",
+        "skills": [
+            "Waterfall",
+            "Crunch",
+            "Dragon Dance",
+            "Hydro Pump"
+        ],
+        "stats": {
+            "hp": 95,
+            "attack": 125,
+            "defense": 79,
+            "sp_attack": 60,
+            "sp_defense": 100,
+            "speed": 81
+        }
+    },
+    {
+        "name": "Chikorita",
+        "type": "Grass",
+        "level": 15,
+        "weight_kg": 6.4,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Tackle",
+            "Growl",
+            "Razor Leaf",
+            "Poison Powder"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 49,
+            "defense": 65,
+            "sp_attack": 49,
+            "sp_defense": 65,
+            "speed": 45
+        }
+    },
+    {
+        "name": "Jolteon",
+        "type": "Electric",
+        "level": 42,
+        "weight_kg": 24.5,
+        "is_shiny": false,
+        "held_item": "Magnet",
+        "skills": [
+            "Thunder Shock",
+            "Swift",
+            "Thunder Wave",
+            "Discharge"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 60,
+            "sp_attack": 110,
+            "sp_defense": 95,
+            "speed": 130
+        }
+    },
+    {
+        "name": "Psyduck",
+        "type": "Water",
+        "level": 21,
+        "weight_kg": 19.6,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Scratch",
+            "Water Pulse",
+            "Zen Headbutt",
+            "Disable"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 52,
+            "defense": 48,
+            "sp_attack": 65,
+            "sp_defense": 50,
+            "speed": 55
+        }
+    }
+]
