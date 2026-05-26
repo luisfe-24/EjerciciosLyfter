@@ -1,0 +1,25 @@
+Últimos commits hechos
+
+commit be637ae33733bf4848613a3780cc662bef72c185
+Author: Luis Felipe Brenes <162082744+luisfe-24@users.noreply.github.com>
+Date:   Mon May 25 14:43:42 2026 -0600
+
+    Initial commit
+
+Primer commit, este se hizo automáticamente al crear el repositorio, añadió el README.
+
+commit fb657c676aaded028360fac9689331dfcd0d5f23
+Author: Luis Felipe Brenes <luisfelipebrenes@gmail.com>
+Date:   Mon May 25 14:52:49 2026 -0600
+
+    Uploading first exercises
+
+Segundo commit, se subieron los ejercicios anteriormente realizados separados por carpetas para cada módulo y tema.
+
+commit 4ff09177f320b66edd5160e5f4b7f04a3252109b (HEAD -> ejercicios-listos, origin/ejercicios-listos)
+Author: Luis Felipe Brenes <luisfelipebrenes@gmail.com>
+Date:   Mon May 25 21:54:16 2026 -0600
+
+    Missing subfolders updated
+
+Tercer commit, se agregaron subcarpetas faltantes para dividir ejercicios por tema, de los módulos de IT Essentials y Lógica de progra.
