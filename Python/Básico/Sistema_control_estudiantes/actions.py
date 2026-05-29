@@ -30,3 +30,17 @@ def request_valid_grade(subject_name):
         except ValueError as ex:
             print(
                 f"Error: Debes ingresar un número válido (sin letras ni espacios). Detalles: {ex}\n")
+
+
+def display_all_students(students_list):
+    if len(students_list) == 0:
+        print("No hay estudiantes registrados aún.")
+    else:
+        for student in students_list:
+            print(f"Nombre: {student['full_name']}")
+            print(f"Sección : {student['section']}")
+            print(f"Nota de español: {student['spanish_grade']}")
+            print(f"Nota de inglés: {student['english_grade']}")
+            print(f"Nota de sociales: {student['history_grade']}")
+            print(f"Nota de ciencias: {student['science_grade']}")
+            print("\n")
