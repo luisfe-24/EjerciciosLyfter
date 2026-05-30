@@ -1,6 +1,3 @@
-students_list = []
-
-
 def register_student(students_list):
     new_student = {}
 

@@ -1,5 +1,8 @@
-from actions import *
-from data import *
+from actions import (display_all_students, display_general_average,
+                     display_top_3, register_student)
+from data import (export_students_data, import_students_data)
+
+students_list = []
 
 
 def menu():
@@ -25,7 +28,7 @@ def menu():
             elif user_option == 4:
                 display_general_average(students_list)
             elif user_option == 5:
-                export_students_data()
+                export_students_data('students_list.csv', students_list)
             elif user_option == 6:
                 import_students_data()
             elif user_option == 7:
