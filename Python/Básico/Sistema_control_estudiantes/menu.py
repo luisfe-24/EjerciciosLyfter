@@ -23,7 +23,7 @@ def menu():
             elif user_option == 3:
                 display_top_3(students_list)
             elif user_option == 4:
-                display_general_average()
+                display_general_average(students_list)
             elif user_option == 5:
                 export_students_data()
             elif user_option == 6:

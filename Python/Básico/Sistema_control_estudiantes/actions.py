@@ -77,3 +77,15 @@ def display_top_3(students_list):
 
     for student in top_3_list:
         print(f"{student['full_name']}: {student['average']}")
+
+
+def display_general_average(students_list):
+    try:
+        sum_average = 0
+        for student in students_list:
+            sum_average += student['average']
+
+        total_average = sum_average / len(students_list)
+        print(total_average)
+    except ZeroDivisionError:
+        print(f"Intentaste dividir 0 entre 0.")
