@@ -12,6 +12,9 @@ def register_student(students_list):
     new_student['history_grade'] = request_valid_grade("sociales")
     new_student['science_grade'] = request_valid_grade("ciencias")
 
+    new_student['average'] = (new_student["spanish_grade"] + new_student['english_grade'] +
+                              new_student['history_grade'] + new_student['science_grade']) / 4
+
     students_list.append(new_student)
 
     print("\n¡Estudiante registrado con éxito!")
@@ -34,7 +37,7 @@ def request_valid_grade(subject_name):
 
 def display_all_students(students_list):
     if len(students_list) == 0:
-        print("No hay estudiantes registrados aún.")
+        print("No hay estudiantes registrados aún.\n")
     else:
         for student in students_list:
             print(f"Nombre: {student['full_name']}")
@@ -44,3 +47,33 @@ def display_all_students(students_list):
             print(f"Nota de sociales: {student['history_grade']}")
             print(f"Nota de ciencias: {student['science_grade']}")
             print("\n")
+
+
+def display_top_3(students_list):
+    if len(students_list) == 0:
+        print("No hay estudiantes registrados aún.\n")
+        return
+
+    top_3_list = []
+
+    for student in students_list:
+        if len(top_3_list) == 0 or student["average"] > top_3_list[0]["average"]:
+            top_3_list.insert(0, student)
+
+        elif (
+            len(top_3_list) == 1
+            or student["average"] > top_3_list[1]["average"]
+        ):
+            top_3_list.insert(1, student)
+
+        elif (
+            len(top_3_list) == 2
+            or student["average"] > top_3_list[2]["average"]
+        ):
+            top_3_list.insert(2, student)
+
+        if len(top_3_list) > 3:
+            top_3_list.pop()
+
+    for student in top_3_list:
+        print(f"{student['full_name']}: {student['average']}")
