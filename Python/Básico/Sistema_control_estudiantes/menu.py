@@ -30,7 +30,7 @@ def menu():
             elif user_option == 5:
                 export_students_data('students_list.csv', students_list)
             elif user_option == 6:
-                import_students_data()
+                students_list = import_students_data('students_list.csv')
             elif user_option == 7:
                 break
             else:
