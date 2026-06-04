@@ -1,5 +1,5 @@
 from actions import (display_all_students, display_general_average,
-                     display_top_3, register_student, delete_student)
+                     display_top_3, register_student, delete_student, display_failed_students)
 from data import (export_students_data, import_students_data)
 
 students_list = []
@@ -12,11 +12,12 @@ def menu():
     print("1. Registrar estudiante")
     print("2. Eliminar estudiante")
     print("3. Ver todos los estudiantes")
-    print("4. Ver top 3 estudiantes")
-    print("5. Ver Promedio general")
-    print("6. Exportar datos")
-    print("7. Importar datos")
-    print("8. Salir")
+    print("4. Ver estudiantes reprobados")
+    print("5. Ver top 3 estudiantes")
+    print("6. Ver Promedio general")
+    print("7. Exportar datos")
+    print("8. Importar datos")
+    print("9. Salir")
 
     while True:
         try:
@@ -34,14 +35,16 @@ def menu():
             elif user_option == 3:
                 display_all_students(students_list)
             elif user_option == 4:
-                display_top_3(students_list)
+                display_failed_students(students_list)
             elif user_option == 5:
-                display_general_average(students_list)
+                display_top_3(students_list)
             elif user_option == 6:
-                export_students_data('students_list.csv', students_list)
+                display_general_average(students_list)
             elif user_option == 7:
-                students_list = import_students_data('students_list.csv')
+                export_students_data('students_list.csv', students_list)
             elif user_option == 8:
+                students_list = import_students_data('students_list.csv')
+            elif user_option == 9:
                 break
             else:
                 print("Seleccionaste un numero invalido.")

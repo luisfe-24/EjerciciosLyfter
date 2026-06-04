@@ -5,19 +5,62 @@ def student_exists(students_list, name, section):
     return False
 
 
+def is_valid_name(name):
+    if name.strip() == "":
+        return False
+    for char in name:
+        if char.isdigit():
+            return False
+    return True
+
+
+def is_valid_section(section):
+    clean_section = section.strip()
+
+    if len(clean_section) < 2 or len(clean_section) > 3:
+        return False
+
+    if not clean_section[:-1].isdigit():
+        return False
+
+    if not clean_section[-1].isalpha():
+        return False
+
+    return True
+
+
 def register_student(students_list):
     new_student = {}
 
-    new_student['full_name'] = input("Nombre del estudiante: ")
-    new_student['section'] = input("Sección: ")
+    while True:
+        new_student["full_name"] = input("Nombre del estudiante: ")
+        if is_valid_name(new_student["full_name"]):
+            break
+        print("El nombre no puede estar vacío ni contener números.\n")
+
+    while True:
+        new_student["section"] = input("Sección: ")
+        if is_valid_section(new_student["section"]):
+            break
+        print("Formato de sección inválido.\n")
+
+    if student_exists(
+        students_list, new_student["full_name"], new_student["section"]
+    ):
+        print("Este estudiante ya se encuentra registrado.")
+        return students_list
 
     new_student["spanish_grade"] = request_valid_grade("español")
-    new_student['english_grade'] = request_valid_grade("inglés")
-    new_student['history_grade'] = request_valid_grade("sociales")
-    new_student['science_grade'] = request_valid_grade("ciencias")
+    new_student["english_grade"] = request_valid_grade("inglés")
+    new_student["history_grade"] = request_valid_grade("sociales")
+    new_student["science_grade"] = request_valid_grade("ciencias")
 
-    new_student['average'] = (new_student["spanish_grade"] + new_student['english_grade'] +
-                              new_student['history_grade'] + new_student['science_grade']) / 4
+    new_student["average"] = (
+        new_student["spanish_grade"]
+        + new_student["english_grade"]
+        + new_student["history_grade"]
+        + new_student["science_grade"]
+    ) / 4
 
     students_list.append(new_student)
 
@@ -70,6 +113,48 @@ def display_all_students(students_list):
             print(f"Nota de sociales: {student['history_grade']}")
             print(f"Nota de ciencias: {student['science_grade']}")
             print("\n")
+
+
+def display_failed_students(students_list):
+    if len(students_list) == 0:
+        print("No hay estudiantes registrados aún.")
+        return
+
+    hay_reprobados = False
+
+    for student in students_list:
+        failed_grades = []
+
+        if student["spanish_grade"] < 60:
+            failed_grades.append(
+                f"Español: {student['spanish_grade']}"
+            )
+
+        if student["english_grade"] < 60:
+            failed_grades.append(
+                f"Inglés: {student['english_grade']}"
+            )
+
+        if student["history_grade"] < 60:
+            failed_grades.append(
+                f"Sociales: {student['history_grade']}"
+            )
+
+        if student["science_grade"] < 60:
+            failed_grades.append(
+                f"Ciencias: {student['science_grade']}"
+            )
+
+        if len(failed_grades) > 0:
+            hay_reprobados = True
+            print(f"\nNombre: {student['full_name']}")
+            print(f"Sección: {student['section']}")
+            print("Materias reprobadas:")
+            for materia in failed_grades:
+                print(f"{materia}")
+
+    if not hay_reprobados:
+        print("\nNo hay estudiantes reprobados en el sistema.")
 
 
 def display_top_3(students_list):
