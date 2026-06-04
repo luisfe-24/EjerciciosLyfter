@@ -1,6 +1,5 @@
 full_name,section,spanish_grade,english_grade,history_grade,science_grade,average
-Carlos Mendoza,11B,95,90,88,91,91.0
-Ana María López,11B,100,98,95,97,97.5
-John Doe,10A,70,85,60,75,72.5
-Valeria Gómez,11B,88,92,80,84,86.0
-Luis Rodríguez,10A,55,65,50,58,57.0
+Carlos Mendoza,11B,95.0,90.0,88.0,91.0,91.0
+Ana María López,11B,100.0,98.0,95.0,97.0,97.5
+Valeria Gómez,11B,88.0,92.0,80.0,84.0,86.0
+Luis Rodríguez,10A,55.0,65.0,50.0,58.0,57.0
