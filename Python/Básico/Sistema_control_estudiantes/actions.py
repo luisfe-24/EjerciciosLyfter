@@ -1,3 +1,10 @@
+def student_exists(students_list, name, section):
+    for student in students_list:
+        if student["full_name"] == name and student["section"] == section:
+            return True
+    return False
+
+
 def register_student(students_list):
     new_student = {}
 
@@ -20,20 +27,22 @@ def register_student(students_list):
 
 
 def delete_student(students_list, name, section):
-    for student in students_list:
-        if student["full_name"] == name and student["section"] == section:
-            confirm = input(
-                f"¿Seguro que desea eliminar a {name} de la sección {section}? (s/n): ")
-            if confirm.lower() == "s":
+    if not student_exists(students_list, name, section):
+        print("\nEl estudiante no existe en el sistema.")
+        return
+
+    confirm = input(
+        f"\n¿Está seguro de que desea eliminar a {name} de la sección {section}? (s/n): "
+    )
+
+    if confirm.lower() == "s":
+        for student in students_list:
+            if student["full_name"] == name and student["section"] == section:
                 students_list.remove(student)
-                print("Estudiante eliminado con éxito.")
+                print("¡Estudiante eliminado con éxito!")
                 return
-
-            else:
-                print("Operación cancelada.")
-                return
-
-    print("El estudiante no existe en el sistema.")
+    else:
+        print("Operación cancelada. El estudiante no fue eliminado.")
 
 
 def request_valid_grade(subject_name):
