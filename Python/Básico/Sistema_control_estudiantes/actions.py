@@ -120,7 +120,7 @@ def display_failed_students(students_list):
         print("No hay estudiantes registrados aún.")
         return
 
-    hay_reprobados = False
+    has_failed_students = False
 
     for student in students_list:
         failed_grades = []
@@ -146,14 +146,14 @@ def display_failed_students(students_list):
             )
 
         if len(failed_grades) > 0:
-            hay_reprobados = True
+            has_failed_students = True
             print(f"\nNombre: {student['full_name']}")
             print(f"Sección: {student['section']}")
             print("Materias reprobadas:")
-            for materia in failed_grades:
-                print(f"{materia}")
+            for subject in failed_grades:
+                print(f"{subject}")
 
-    if not hay_reprobados:
+    if not has_failed_students:
         print("\nNo hay estudiantes reprobados en el sistema.")
 
 
@@ -162,29 +162,12 @@ def display_top_3(students_list):
         print("No hay estudiantes registrados aún.\n")
         return
 
-    top_3_list = []
+    top_3_list = sorted(
+        students_list, key=lambda x: x["average"], reverse=True)[:3]
 
-    for student in students_list:
-        if len(top_3_list) == 0 or student["average"] > top_3_list[0]["average"]:
-            top_3_list.insert(0, student)
-
-        elif (
-            len(top_3_list) == 1
-            or student["average"] > top_3_list[1]["average"]
-        ):
-            top_3_list.insert(1, student)
-
-        elif (
-            len(top_3_list) == 2
-            or student["average"] > top_3_list[2]["average"]
-        ):
-            top_3_list.insert(2, student)
-
-        if len(top_3_list) > 3:
-            top_3_list.pop()
-
-    for student in top_3_list:
-        print(f"{student['full_name']}: {student['average']}")
+    for i, student in enumerate(top_3_list, 1):
+        print(
+            f"{i}. {student['full_name']} (Sección {student['section']}) - Promedio: {student['average']}")
 
 
 def display_general_average(students_list):
