@@ -1,4 +1,4 @@
-from menu import menu
+from Python_Basics.Sistema_control_estudiantes.menu import menu
 
 
 def main():

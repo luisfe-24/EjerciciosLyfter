@@ -1,6 +1,7 @@
-from actions import (display_all_students, display_general_average,
-                     display_top_3, register_student, delete_student, display_failed_students)
-from data import (export_students_data, import_students_data)
+from Python_Basics.Sistema_control_estudiantes.actions import (display_all_students, display_general_average,
+                                                               display_top_3, register_student, delete_student, display_failed_students)
+from Python_Basics.Sistema_control_estudiantes.data import (
+    export_students_data, import_students_data)
 
 students_list = []
 
