@@ -106,7 +106,7 @@ def delete_student(students_list, name, section):
 
     if confirm.lower() == "s":
         for student in students_list:
-            if student.full_name == name and student.section == student.section:
+            if student.full_name == name and student.section == section:
                 students_list.remove(student)
                 print("¡Estudiante eliminado con éxito!")
                 return
@@ -158,17 +158,17 @@ def display_failed_students(students_list):
 
         if student.english_grade < 60:
             failed_grades.append(
-                f"Inglés: {student['english_grade']}"
+                f"Inglés: {student.english_grade}"
             )
 
         if student.history_grade < 60:
             failed_grades.append(
-                f"Sociales: {student['history_grade']}"
+                f"Sociales: {student.history_grade}"
             )
 
         if student.science_grade < 60:
             failed_grades.append(
-                f"Ciencias: {student['science_grade']}"
+                f"Ciencias: {student.science_grade}"
             )
 
         if len(failed_grades) > 0:
