@@ -11,7 +11,7 @@ class BankAccount:
         print("Monto retirado con exito")
 
 
-class SavingsAccounts(BankAccount):
+class SavingsAccount(BankAccount):
     def __init__(self, balance, min_balance):
         super().__init__(balance)
         self.min_balance = min_balance
@@ -24,7 +24,7 @@ class SavingsAccounts(BankAccount):
         super().withdraw_money(amount)
 
 
-my_account = SavingsAccounts(10, 5)
+my_account = SavingsAccount(10, 5)
 
 my_account.withdraw_money(5)
 
