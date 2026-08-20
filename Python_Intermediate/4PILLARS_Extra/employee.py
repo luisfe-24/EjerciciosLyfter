@@ -18,7 +18,7 @@ class Employee:
         self._salary = new_salary
 
     def promote(self, percent):
-        self._salary += self.salary * percent
+        self.salary += self.salary * percent
 
 
 employee = Employee("Ana", 1000)
