@@ -25,8 +25,8 @@ def log_call(func):
     return wrapper
 
 
-@validate_numbers
 @log_call
+@validate_numbers
 def multiply(a, b):
     return (a*b)
 
