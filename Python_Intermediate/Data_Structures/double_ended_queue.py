@@ -40,12 +40,18 @@ class DoubleEndedQueue:
             self.head = self.head.next
 
     def pop_right(self):
-        current_node = self.head
-        while current_node.next is not self.tail:
-            current_node = current_node.next
+        if self.head is None:
+            return
+        if self.head == self.tail:
+            self.head = None
+            self.tail = None
+        else:
+            current_node = self.head
+            while current_node.next is not self.tail:
+                current_node = current_node.next
 
-        current_node.next = None
-        self.tail = current_node
+            current_node.next = None
+            self.tail = current_node
 
 
 first_node = Node("Medio (Inicial)")
